@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Bernard+MT+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+body{
+    font-family: 'Baloo 2';
+    font-size: 36px;
+}
+.button{
+    width: 160px;
+    background-color:  rgba(205, 53, 0, 1);
+    color: white;
+    border: none;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size:36px;
+    border-radius: 20px;
+}
+.button:hover{
+    background-color: rgba(205, 53, 0, 0.8);
+}
+.breakingLine {
+    background: rgba(217,217,217,1);
+    width: 90%;
+    height: 4px;
+    justify-content: center;
+    align-self: center;
+}
+.line{
+    background-color: rgba(205, 53, 0, 1);
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    top: 55px;
+    align-items: center;
+
+}
+.time {
+    width: 91px;
+    color: rgba(205, 53, 0, 1);
+    position: absolute;
+    top: 11px;
+    left: 190px;
+    font-weight: 700;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+}
+.MyContainer {
+    width: 471px;
+    height: 170px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 4px solid rgba(0, 0, 0, 1);
+    border-radius: 49px;
+    overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+    .MyContainer {
+        width: 100%;
+        height: 120px;
+        border-radius: 20px;
+    }
+}
+.artistName {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+}
+.lblButton {
+    color: white;
+    background-color: white;
+    color: rgba(205, 53, 0, 1);
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    border-radius: 20px;
+    border: 3px solid rgba(205, 53, 0, 1);
+}
+.danceFont{
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 126px;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+.festivalFont{
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 60px;
+    opacity: 1;
+}
+.danceRowContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+.compartment-1 {
+    height: 50vh; /* set the height of the compartment to 50% of the viewport height */
+    position: relative; /* set the position to relative so that the absolute positioned child elements are positioned relative to this element */
+}
+
+.compartment-1 img {
+    object-fit: cover; /* set the image to cover the entire container */
+}
+.list-group-item {
+    border: none;
+}
+
+pre {
+    margin: 0;
+}
+
+.btn {
+    align-self: center;
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-check-label a {
+    color: black;
+    text-decoration: underline;
+}
+
+.form-check-label a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.form-check-input {
+    border: rgba(205, 53, 0, 1) 2px solid;
+}
+
+.btnRemoveFilter {
+    color: rgba(205, 53, 0, 1);
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    border: 4px solid rgba(205, 53, 0, 1);
+    border-top-right-radius: 49px;
+    border-bottom-left-radius: 49px;
+    margin-left: -26px;
+    margin-bottom: -4px;
+}
+.btnRemoveFilter:hover{
+    background-color: rgba(245,215,204,1);
+    opacity: 1;
+}
+.btnApplyFilter{
+    background: rgba(205,53,0,1);
+    border: 3px solid rgba(205, 53, 0, 1);
+    opacity: 1;
+    color : white;
+    border-top-left-radius: 49px;
+    border-bottom-right-radius: 49px;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-right: -4px;
+    margin-bottom: -2px;
+}
+.btnApplyFilter:hover{
+    background-color: rgba(245,215,204,1);
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .compartment-1 {
+        height: 30vh; /* set the height of the compartment to 30% of the viewport height for mobile devices */
+    }
+    .festivalFont {
+        font-size: 2.5rem; /* reduce the font size of the festival title for mobile devices */
+    }
+    .danceFont {
+        font-size: 4rem; /* increase the font size of the dance title for mobile devices */
+        padding-top: 10px; /* reduce the padding top for mobile devices */
+    }
+}
+@media (min-width: 768px) {
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+.carousel-control-prev, .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btnArtist {
+    background: rgba(0, 0, 0, 1);
+}
+#btnArtist{
+    width: 147px;
+    height: 52px;
+    left: 131px;
+    top: 519px;
+    background: rgba(0, 0, 0, 0.58);
+    border-radius: 49px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 58px;
+    color: white;
+    border-radius: 49px;
+    border: none;
+}
+.hover-zoom {
+    transition: transform 0.5s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+.container-hover:hover #hoverArtist {
+    width: 453px;
+    height: 453px;
+    left: -3.7px;
+    top: -5.91px;
+}
+
+.container-hover:hover #btnArtist {
+    background-color: black;
+    color: white;
+}
+.book-button {
+    background-color: rgba(205, 53, 0, 1);
+    border: none;
+}
+
+.book-button:hover {
+    color: #ffb86c;
+    border: none;
+}

@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css?family=Bernard+MT+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+
+body {
+    font-size: 14px;
+    font-family: 'Baloo 2';
+}
+
+.restaurantCardImageDivShow {
+    width: 200px;
+    height: 100px;
+}
+
+.roundImageRestaurantCardImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.restaurantContainer {
+    display: flex;
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    border: 4px solid rgba(0, 0, 0, 1);
+    border-radius: 49px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+.restaurantContainer:nth-child(odd) {
+    background-color: rgba(100,200,100,0.7);
+}
+.restaurantContainer:nth-child(even) {
+    background-color: rgba(200,100,100,0.7);
+}
+
+.restaurantContainer:hover {
+    width: 440px;
+    height: 330px;
+    background-color: aqua;
+    font-size: 18px;
+}
+
+.restaurantNameRowValue {
+    font-size: 17px;
+}
+
+.restaurantNameRowValue:hover {
+    font-size: 19px;
+}
+
+
+
+.yummyMainImage {
+    height: 400px;
+    background: no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative; /* set the container to relative positioning */
+}
+
+.yummyHeader {
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.yummyMainImage span {
+    position: absolute; /* set the position of the span element to absolute */
+    bottom: 0; /* align the bottom of the span element to the bottom of the container */
+    left: 0; /* align the left of the span element to the left of the container */
+    margin: 0 20px 20px 20px; /* add some margin to the left and bottom to give space between the text and the edges of the container */
+}
+
+.yummyContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.yummyInformation {
+    margin-right: 20px;
+    width: 550px;
+    height: 650px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    border: 1px solid #ccc;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    text-align: left;
+    padding: 30px 20px 0;
+    margin-top: 40px;
+    margin-left:60px;
+    display: flex;
+    flex-direction: column;
+    /*flex-shrink: 0;*/
+}
+
+.yummyInformation h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.yummyWalkingRoute {
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin-top: 40px;
+    margin-right:60px;
+    /*margin: 40px 10px 10px 330px;*/
+}
+
+.yummyWalkingRoute ul {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.yummyWalkingRoute li {
+    margin-bottom: 5px;
+}
+
+.yummyWalkingRoute span:nth-child(2) {
+    width: 300px;
+    font-size: 14px;
+}
+
+.scheduleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 11%;
+    margin: 40px auto 0;
+}
+
+.circleLine {
+    width: 220px;
+    height: 50px;
+    position: relative;
+    border: 4px solid rgba(205, 53, 0, 1);
+    border-radius: 49px;
+    flex-shrink: 0;
+}
+
+.tourDate {
+    color: rgba(205, 53, 0, 1);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 45px;
+}
+
+.tourContainerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 11%;
+}
+
+.tourContainerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.tourContainer {
+    display: flex;
+    margin-top: 30px;
+    width: 220px;
+    height: 170px;
+    position: relative;
+    border: 4px solid rgba(0, 0, 0, 1);
+    border-radius: 49px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tourLanguage {
+    width: 191px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.tourTime {
+    width: 88px;
+    color: rgba(205, 53, 0, 1);
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.detailHeader {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.detailContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.detailMainContainer {
+    width: 80%;
+    height: 862px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #ccc;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 50px auto 0;
+    padding: 40px;
+}
+
+.detailMainContainer2 {
+    width: 80%;
+    height: 500px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #ccc;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    margin: 50px auto;
+}
+
+.detailParagraph {
+    width: 700px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+}
+
+.detailPicture {
+    width: 368px;
+    height: 355px;
+    background: url("/image/yummyIndex.jpeg") no-repeat center center;
+    background-size: cover;
+    border-radius: 49px;
+}
+
+.detailMap {
+    width: 600px;
+    height: 355px;
+    background: url("/image/yummyIndex.jpeg") no-repeat center center;
+    background-size: cover;
+    border-radius: 49px;
+}
+
+@media only screen and (max-width: 768px) {
+    .yummyContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yummyInformation {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 30px 20px;
+        box-shadow: none;
+    }
+
+    .yummyInformation h2 {
+        font-size: 1.4em;
+    }
+
+    .yummyWalkingRoute {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .yummyWalkingRoute span:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+
+    .scheduleContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+
+    }
+
+    .tourContainerRow {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .tourContainer {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+        border: 4px solid rgba(0, 0, 0, 1);
+        margin: 20px 0;
+    }
+
+    .tourLanguage {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tourTime {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+    }
+    .dateInHover {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile */
+    .yummyMainImage {
+        height: 300px;
+    }
+
+    .yummyMainImage span {
+        margin: 0 10px 10px 10px;
+        font-size: 0.8em;
+    }
+
+    .yummyInformation {
+        padding: 20px;
+    }
+
+    .yummyInformation h2 {
+        font-size: 1.2em;
+    }
+
+    .yummyWalkingRoute {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .yummyWalkingRoute span:nth-child(2) {
+        font-size: 0.8em;
+    }
+
+    .tourLanguage {
+        font-size: 1.2em;
+    }
+
+    .tourTime {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+.yummyMainImage {
+    height: 400px;
+    background: no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative; /* set the container to relative positioning */
+}
+
+.yummyHeader {
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.yummyMainImage span {
+    position: absolute; /* set the position of the span element to absolute */
+    bottom: 0; /* align the bottom of the span element to the bottom of the container */
+    left: 0; /* align the left of the span element to the left of the container */
+    margin: 0 20px 20px 20px; /* add some margin to the left and bottom to give space between the text and the edges of the container */
+}
+
+.yummyContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.yummyInformation {
+    margin-right: 20px;
+    width: 550px;
+    height: 650px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    border: 1px solid #ccc;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    text-align: left;
+    padding: 30px 20px 0;
+    margin-top: 40px;
+    margin-left:60px;
+    display: flex;
+    flex-direction: column;
+    /*flex-shrink: 0;*/
+}
+
+.yummyInformation h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.yummyWalkingRoute {
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin-top: 40px;
+    margin-right:60px;
+    /*margin: 40px 10px 10px 330px;*/
+}
+
+.yummyWalkingRoute ul {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.yummyWalkingRoute li {
+    margin-bottom: 5px;
+}
+
+.yummyWalkingRoute span:nth-child(2) {
+    width: 300px;
+    font-size: 14px;
+}
+
+.scheduleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 11%;
+    margin: 40px auto 0;
+}
+
+.circleLine {
+    width: 220px;
+    height: 50px;
+    position: relative;
+    border: 4px solid rgba(205, 53, 0, 1);
+    border-radius: 49px;
+    flex-shrink: 0;
+}
+
+.tourDate {
+    color: rgba(205, 53, 0, 1);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 45px;
+}
+
+.tourContainerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 11%;
+}
+
+.tourContainerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.tourContainer {
+    display: flex;
+    margin-top: 30px;
+    width: 220px;
+    height: 170px;
+    position: relative;
+    border: 4px solid rgba(0, 0, 0, 1);
+    border-radius: 49px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tourLanguage {
+    width: 191px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.tourTime {
+    width: 88px;
+    color: rgba(205, 53, 0, 1);
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.detailHeader {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.detailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.detailContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.detailMainContainer {
+    width: 80%;
+    height: 862px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #ccc;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 50px auto 0;
+    padding: 40px;
+}
+
+.detailMainContainer2 {
+    width: 80%;
+    height: 500px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #ccc;
+    border-radius: 49px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    margin: 50px auto;
+}
+
+.detailParagraph {
+    width: 700px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+}
+
+.detailPicture {
+    width: 368px;
+    height: 355px;
+    background: url("/image/yummyIndex.jpeg") no-repeat center center;
+    background-size: cover;
+    border-radius: 49px;
+}
+
+.detailMap {
+    width: 600px;
+    height: 355px;
+    background: url("/image/yummyIndex.jpeg") no-repeat center center;
+    background-size: cover;
+    border-radius: 49px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablets */
+    .yummyContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yummyInformation {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 30px 20px;
+        box-shadow: none;
+    }
+
+    .yummyInformation h2 {
+        font-size: 1.4em;
+    }
+
+    .yummyWalkingRoute {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .yummyWalkingRoute span:nth-child(2) {
+        width: 100%;
+        text-align: center;
+    }
+
+    .scheduleContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+
+    }
+
+    .tourContainerRow {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .tourContainer {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+        border: 4px solid rgba(0, 0, 0, 1);
+        margin: 20px 0;
+    }
+
+    .tourLanguage {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tourTime {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile */
+    .yummyMainImage {
+        height: 300px;
+    }
+
+    .yummyMainImage span {
+        margin: 0 10px 10px 10px;
+        font-size: 0.8em;
+    }
+
+    .yummyInformation {
+        padding: 20px;
+    }
+
+    .yummyInformation h2 {
+        font-size: 1.2em;
+    }
+
+    .yummyWalkingRoute {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .yummyWalkingRoute span:nth-child(2) {
+        font-size: 0.8em;
+    }
+}
+

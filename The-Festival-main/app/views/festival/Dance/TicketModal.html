@@ -1,0 +1,82 @@
+<div class="modal fade" id="performanceModal" tabindex="-1" role="dialog" aria-labelledby="tourModalLabel"
+     aria-hidden="true" data-performancePrice='' >
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2 class="modal-title text-center" id="ticketPerformance">Book your Performance</h2><br>
+                        <h3 class="modal-title text-center" id="artistName"
+                            style="font-weight: bold;color:#CD3600  "></h3>
+                    </div>
+                </div>
+
+                <button type="button" class=" btn close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style=""><i class="fa-solid fa-x fa-xl" style="color: #000000;"></i></span>
+                </button>
+            </div>
+            <form method="POST" action="/festival/dance/ticketSelection">
+                <div class="modal-body">
+                    <div class="container-fluid ps-3">
+                        <div class="container-fluid ps-5">
+                            <div class="col">
+                                <div class="pb-3">
+                                    <label for="location"> <strong>Location:</strong></label>
+                                    <span id="location"></span>
+                                </div>
+                                <div class="pb-3">
+                                    <label for="dateTime"> <strong>Date:</strong></label>
+                                    <span id="dateTime"></span>
+                                </div>
+                                <div class="pb-3">
+                                    <label for="numberOfTickets"> <strong>Number Of Tickets:</strong></label>
+                                    <input id="numberOfTickets" type="number" name="NoOfTickets" step="1" oninput="updatePrice(this)">
+                                </div>
+                                <div class="pb-3">
+                                    <label for="price"> <strong>Price:</strong></label>
+                                    <span id="price"> </span>
+                                </div>
+                                <div class="container-fluid">
+                                    <div>
+                                        <label style="font-weight: bold; color:#B3B3B3;"> Switch to all access passes in
+                                            shopping cart</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="hidden" id="performanceId" name="performanceId">
+                </div>
+                <div class="modal-footer d-flex justify-content-center border-0">
+                    <button type="button" class=" btn-AddToCart"
+                            data-bs-dismiss="modal" >
+                        Cancel  <i class="fa-light fa-circle-x" style="color: #ffffff;"></i>
+                    </button>
+                    <button type="submit" class=" btn-AddToCart" name="addPerformanceToCart"
+                    >Add to cart  <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                    <?php if (!empty($errorMessage)): ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?php echo $errorMessage; ?>
+                    </div>
+                    <?php endif; ?>
+                    <style>
+                        .btn-AddToCart {
+                            width: 330px;
+                            height: 75px;
+                            background: #CD3600;
+                            color: #fff;
+                            border-radius: 49px;
+                            transition: background-color 0.3s ease-in-out;
+                        }
+                        .btn-AddToCart:hover {
+                            background: #CD3600;
+                        }
+                    </style>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

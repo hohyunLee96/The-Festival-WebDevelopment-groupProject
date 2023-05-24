@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Bernard+MT+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+
+
+.imgCaptionWordFont {
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 126px;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+.imgCaptionArticleFont {
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 60px;
+    opacity: 1;
+}
+
+
+.modal:not(#data) {
+    background: rgba(134, 125, 125, 0.5);
+}
+
+#data, #eventPageImg {
+    opacity: 100%;
+    background-color: white;
+}
+
+#data {
+    height: 400px;
+}
+
+
+#eventPageImg {
+    width: 100%;
+}
+
+
+#eventAccessPageMap {
+    margin: 5%;
+}
+
+.eventsPageMapPlaceholder {
+    width: 100%;
+    height: 410px;
+}
+
+.smallImage, .InstagramImage {
+    width: 100%;
+}
+
+
+#mainParagraph {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+
+#eventInfo {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px) {
+
+    .eventPageImg {
+        height: 100%;
+    }
+
+    #eventInfoRow {
+        height: 140px;
+    }
+
+    #eventInfo {
+        display: none;
+    }
+
+    #schedule {
+        display: none;
+    }
+
+    #eventAccessPageMap {
+        display: none;
+    }
+
+    #InstagramData {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    #data {
+        height: 500px;
+    }
+}

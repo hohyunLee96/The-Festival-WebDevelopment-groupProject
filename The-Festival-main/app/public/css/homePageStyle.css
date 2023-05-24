@@ -1,0 +1,69 @@
+
+
+   @import url('https://fonts.googleapis.com/css?family=Bernard+MT+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+
+
+    #homePageImg{width:100%;}
+
+    #homePageImagesPanel {border: 1px solid white;
+      margin:5%;
+   }
+
+   .homePagePanelImg, .homePageVideoPlaceholder, .homePageMapPlaceholder
+    {width:100%; 
+    height:410px;}
+  
+    #homePageVideoPanel {background-color:  #f0f3f4;
+      border: 1px solid white;
+   }
+
+   #homePageVideoPanel, #homePageVideo, #homePageMap {
+    margin: 5%;}
+
+   #homePageLinkToFestival {background-color:white;}
+   .homePageInfoImg {width:20%;}
+
+   .smallImage, .InstagramImage {width: 100%;}
+
+   .itemHeader, .itemFooter {border: 2px solid  #e5e9ea ;}
+
+
+   .imgCaptionVerbFont{
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 60px;
+    opacity: 1;
+}
+
+   .imgCaptionNounFont{
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 126px;
+    opacity: 1;
+    padding-top: 20px;
+  
+}
+
+
+
+   @media (max-width: 768px) {
+
+    .homePagePanelImg{height: 100%;}
+     #pictureCaption{text-align: left;
+    padding-left:0;
+  margin-left:0}
+    #homePagePanelImgRow{height: 220px;}
+    #homePageLinkToFestival {display:none;}
+    #homePageVideoRow { height:240px;}
+    .homePageVideoPlaceholder{height:100%;
+    width:100%;}
+    #InstagramData{display:none;}
+    #info{display:none;}
+  }
+
+  
+  
+

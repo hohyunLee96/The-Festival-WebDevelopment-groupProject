@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Bernard+MT+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+body{
+    font-family: 'Baloo 2',sans-serif;
+    font-size: 36px;
+}
+.compartment-1 {
+    height: 50vh; /* set the height of the compartment to 50% of the viewport height */
+    position: relative; /* set the position to relative so that the absolute positioned child elements are positioned relative to this element */
+}
+
+.compartment-1 img {
+    object-fit: cover; /* set the image to cover the entire container */
+}
+.DanceFont{
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 60px;
+    opacity: 1;
+}
+.artistNameFont{
+    color: #ffffff;
+    font-family: 'Bernard MT Condensed', serif;
+    font-weight: normal;
+    font-size: 126px;
+    opacity: 1;
+    padding-top: 20px;
+}
+.BackButton{
+    border: 2px solid rgba(205, 53, 0, 1);
+    background-color: rgba(205,53,0,0.10000000149011612);
+    width: 87px;
+    height: 54px;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 90;
+}
+.BackButton:hover{
+    background-color: rgba(205,53,0,0.20000000298023224);
+}
+.artistContainer{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.podcast-card {
+    background-color: rgb(23,23,23);
+    overflow: hidden;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.frame-117 {
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 12px;
+    padding: 10px;
+}
+.albumName {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+.detail-Text {
+    margin-top: -25px;
+    color: rgb(179,179,179);
+    font-size: 13px;
+    font-weight: normal;
+}
+.DateShowButton {
+    width: 278px;
+    height: 68px;
+    background: #D9D9D9;
+    color: rgba(205, 54, 0, 1);
+    border-radius: 49px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 58px;
+    text-align: center;
+}
+.BookBtn{
+    width: 275px;
+    height: 55px;
+    background: #CD3600;
+    border-radius: 49px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 51px;
+    text-align: center;
+    color: white;
+}
+.BookBtn:hover{
+    background-color: rgba(245,215,204,1);
+    opacity: 1;
+}
+.hoverable :hover {
+    background-color: rgba(217, 217, 217, 0.2) !important;
+}
+.album-link {
+    display: block;
+    position: relative;
+}
+
+.album-link:hover .podcast-card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+
+

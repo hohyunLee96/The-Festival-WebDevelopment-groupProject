@@ -1,0 +1,20 @@
+Hohyun Lee 
+sprint 1 - Password reset, Register 
+sprint 2 - Event History(View event information, add ticket to cart, manage event information), 
+sprint 3 - Manage shopping cart, share shopping cart, order payment.
+
+Bijay Sapkota
+sprint 1 - Manage users CRUD
+sprint 2 -  visit haarlem information pages, Event Dance(View general event information, add ticket to cart, manage event, manage venues, manage artists)
+sprint 3 - access rest api, manage api keys
+
+Sara 
+sprint 1 - Login
+sprint 2 - Edit homepage, Event Yummy(view event information, view restaurant information, place reservation, manage restaurants, manage sessions, manage reservations)
+sprint 3 - Receive tickets, Receive invoice
+
+Maria
+sprint 1 - manage account
+sprint 2 - view homepage, all-access pass(add it to cart)
+sprint 3 - manage orders, Export order information
+
